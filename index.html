@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>星座手鍊・半客製串珠手串｜織女星 VEGA 台中東海</title>
+<meta name="description" content="織女星 VEGA 是台中東海大學企管系學生的手工串珠手鍊品牌。半客製星座手串：自己挑顏色，依 12 星座推薦配色，NT$390 起，7-11 賣貨便下單取貨。">
+<link rel="canonical" href="https://mrlongmo.github.io/vega-site/">
+<meta property="og:url" content="https://mrlongmo.github.io/vega-site/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:title" content="織女星 VEGA｜挑你的色，織你的星">
+<meta property="og:description" content="半客製星座串珠手串，挑你的色，織你的星。">
+<meta property="og:image" content="https://mrlongmo.github.io/vega-site/img/pink.jpg">
+<link rel="icon" href="img/star.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Noto+Serif+TC:wght@400;500;600&family=LXGW+WenKai+TC&display=swap" rel="stylesheet">
+<script src="assets/data.js?v=3"></script>
+<style>
+:root{
+  --cream:#FDF9EE; --paper:#FFFDF7; --ink:#2A1F1A; --muted:#7A6A5A;
+  --gold:#B8913A; --gold-soft:#E9DCB8; --navy:#13234A; --wine:#6B1414;
+  --serif:'Noto Serif TC','Songti TC',serif; --latin:'Cormorant Garamond',Didot,serif; --hand:'LXGW WenKai TC','Kaiti TC',serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--ink);font-family:var(--serif);line-height:1.7;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.en{font-family:var(--latin);letter-spacing:.28em;text-transform:uppercase;color:var(--gold);font-size:13px}
+h2{font-weight:500;font-size:clamp(26px,4vw,34px);letter-spacing:.12em;color:var(--wine)}
+.sec{padding:88px 0}
+.sec-head{margin-bottom:34px;display:flex;align-items:baseline;gap:16px;flex-wrap:wrap}
+.note-hand{font-family:var(--hand);color:var(--gold);font-size:17px;letter-spacing:.02em}
+.chat{max-width:640px;font-size:17px;color:var(--ink);line-height:2}
+.chat p{margin-bottom:10px}
+.chat .note-hand{display:block;margin-top:14px}
+.sec-head .en{display:block;margin-bottom:10px}
+.btn{display:inline-block;padding:13px 34px;border:1px solid var(--navy);background:var(--navy);color:#F4EBD3;letter-spacing:.2em;font-size:15px;transition:.25s}
+.btn:hover{background:transparent;color:var(--navy)}
+.btn.ghost{background:transparent;color:var(--navy)}
+.btn.ghost:hover{background:var(--navy);color:#F4EBD3}
+.bar{background:var(--navy);color:#F4EBD3;text-align:center;font-size:13px;letter-spacing:.15em;padding:9px 12px}
+.bar b{color:var(--gold-soft);font-weight:500}
+.bar{position:relative;overflow:hidden;height:36px;padding:0 12px}
+.bar span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:0 12px;white-space:nowrap;transform:translateX(60%);opacity:0;transition:transform .6s ease,opacity .6s ease}
+.bar span.on{transform:none;opacity:1}
+.bar span.out{transform:translateX(-60%);opacity:0}
+header{position:sticky;top:0;z-index:20;background:rgba(253,249,238,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--gold-soft)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{display:flex;align-items:center;gap:10px}
+.brand img{height:42px}
+.brand span{font-family:var(--latin);font-size:22px;letter-spacing:.3em;color:var(--wine)}
+.brand small{display:block;font-family:var(--serif);font-size:11px;letter-spacing:.4em;color:var(--muted);margin-top:-4px}
+.nav ul{display:flex;gap:30px;list-style:none;font-size:15px;letter-spacing:.12em}
+.nav ul a:hover{color:var(--gold)}
+.menu-btn{display:none;background:none;border:0;font-size:22px;color:var(--navy);cursor:pointer}
+.hero{display:grid;grid-template-columns:1fr 1fr;align-items:stretch}
+.hero-img{background:url(img/pink.jpg) center/cover}
+.hero-txt{display:flex;flex-direction:column;justify-content:center;padding:60px 7vw;background:var(--paper)}
+.hero-txt h1{font-weight:500;font-size:clamp(34px,5vw,52px);letter-spacing:.14em;color:var(--wine);line-height:1.35;margin:16px 0 18px}
+.hero-txt p{color:var(--muted);font-size:16px;margin-bottom:32px;max-width:26em}
+.hero-txt .btns{display:flex;gap:12px;flex-wrap:wrap}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.card{background:var(--paper);border:1px solid var(--gold-soft);transition:.3s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 30px -18px rgba(19,35,74,.35)}
+.card .ph{aspect-ratio:1/1;overflow:hidden;position:relative}
+.card .ph img{width:100%;height:100%;object-fit:cover;transition:.6s}
+.card:hover .ph img{transform:scale(1.04)}
+.tag{position:absolute;top:12px;left:12px;background:var(--navy);color:#F4EBD3;font-size:12px;letter-spacing:.12em;padding:4px 10px}
+.card .body{padding:22px 22px 24px;display:flex;flex-direction:column;flex:1}
+.card h3{font-weight:500;font-size:22px;letter-spacing:.12em;color:var(--wine)}
+.card h3 .en{font-size:12px;margin-left:8px}
+.card .spec{font-size:14px;color:var(--muted);margin:8px 0 14px;line-height:1.8}
+.card .sign{font-size:13px;color:var(--gold);letter-spacing:.08em;margin-bottom:16px}
+.card .row{margin-top:auto;display:flex;align-items:center;justify-content:space-between}
+.price{font-family:var(--latin);font-size:26px;color:var(--wine)}
+.price small{font-size:14px;margin-right:2px}
+.buy{font-size:14px;letter-spacing:.15em;border-bottom:1px solid var(--navy);padding-bottom:2px;color:var(--navy)}
+.buy:hover{color:var(--gold);border-color:var(--gold)}
+.quiz{background:var(--navy);color:#F4EBD3;position:relative;overflow:hidden}
+.quiz h2{color:#F4EBD3}
+.stars{position:absolute;inset:0;pointer-events:none;opacity:.5;background-image:radial-gradient(1.5px 1.5px at 12% 20%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 30% 70%,#fff 50%,transparent 51%),radial-gradient(1.5px 1.5px at 55% 15%,#E9DCB8 50%,transparent 51%),radial-gradient(1px 1px at 78% 60%,#fff 50%,transparent 51%),radial-gradient(1.5px 1.5px at 90% 25%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 45% 88%,#E9DCB8 50%,transparent 51%),radial-gradient(1px 1px at 65% 40%,#fff 50%,transparent 51%)}
+.signs{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;max-width:760px;margin:0 auto}
+.signs button{background:transparent;border:1px solid rgba(233,220,184,.45);color:#F4EBD3;padding:12px 4px;font-family:var(--serif);font-size:15px;letter-spacing:.1em;cursor:pointer;transition:.2s}
+.signs button small{display:block;font-size:11px;color:var(--gold-soft);opacity:.75;letter-spacing:0}
+.signs button:hover,.signs button.on{background:var(--gold-soft);color:var(--navy)}
+.signs button:hover small,.signs button.on small{color:var(--navy)}
+.result{max-width:760px;margin:36px auto 0;display:none;grid-template-columns:220px 1fr;gap:28px;align-items:center;background:var(--paper);color:var(--ink);padding:22px}
+.result.show{display:grid;animation:fade .45s ease}
+.result img{aspect-ratio:1/1;object-fit:cover;width:100%}
+.result h3{font-weight:500;color:var(--wine);font-size:24px;letter-spacing:.1em;margin:6px 0 8px}
+.result p{color:var(--muted);margin-bottom:18px}
+.hint{text-align:center;color:var(--gold-soft);opacity:.8;font-size:13px;margin-top:22px}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;text-align:center}
+.three div{padding:30px 20px;border-top:1px solid var(--gold)}
+.three .num{font-family:var(--latin);font-size:40px;color:var(--gold);line-height:1}
+.three h3{font-weight:500;color:var(--wine);letter-spacing:.12em;margin:12px 0 8px}
+.three p{color:var(--muted);font-size:15px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.about img{aspect-ratio:4/5;object-fit:cover;width:100%}
+.about p{color:var(--muted);margin:16px 0}
+.about blockquote{font-size:20px;color:var(--wine);letter-spacing:.12em;border-left:2px solid var(--gold);padding-left:16px;margin-top:22px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:s}
+.steps div{background:var(--paper);border:1px solid var(--gold-soft);padding:24px 20px;position:relative}
+.steps div::before{counter-increment:s;content:"0" counter(s);font-family:var(--latin);color:var(--gold);font-size:28px;display:block;margin-bottom:6px}
+.steps h3{font-weight:500;color:var(--wine);letter-spacing:.1em;margin-bottom:6px;font-size:17px}
+.steps p{font-size:14px;color:var(--muted)}
+footer{background:var(--navy);color:#CFC6B0;padding:56px 0 30px;font-size:14px}
+.foot{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;align-items:flex-start}
+.foot img{height:70px}
+.foot ul{list-style:none;line-height:2.2}
+.foot a:hover{color:var(--gold-soft)}
+.copy{border-top:1px solid rgba(233,220,184,.2);margin-top:36px;padding-top:18px;text-align:center;font-size:12px;letter-spacing:.1em;opacity:.7}
+
+.ph-slot{position:relative;background:repeating-linear-gradient(135deg,#F3EAD3 0 14px,#EFE3C6 14px 28px);border:1px dashed var(--gold);display:flex;align-items:center;justify-content:center;text-align:center;color:var(--muted);font-size:14px;letter-spacing:.08em;overflow:hidden}
+.ph-slot b{display:block;color:var(--wine);font-weight:500;font-size:16px;margin-bottom:4px}
+.ph-slot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.wear{display:grid;grid-template-columns:2fr 1fr 1fr;gap:16px}
+.wear .ph-slot{aspect-ratio:4/5}
+.wear .ph-slot.wide{aspect-ratio:auto;min-height:100%}
+@media (max-width:860px){.wear{grid-template-columns:1fr 1fr}.wear .ph-slot.wide{grid-column:1/-1;aspect-ratio:16/10}}
+.draft{font-size:11px;letter-spacing:.06em;background:#FFF0C2;color:#7A5A00;border:1px dashed #C9A24A;padding:2px 8px;margin-left:8px;vertical-align:middle}
+
+.slider{position:relative;overflow:hidden;aspect-ratio:3/4;max-height:86vh;width:100%;background:#F4EFE7}
+.slides{display:flex;height:100%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;position:absolute;inset:0}
+.slides::-webkit-scrollbar{display:none}
+.slides img{flex:0 0 100%;width:100%;height:100%;object-fit:contain;scroll-snap-align:start}
+.arr{position:absolute;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;border:0;background:rgba(253,249,238,.85);color:var(--navy);font-size:26px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px -6px rgba(0,0,0,.4)}
+.arr.prev{left:14px}.arr.next{right:14px}
+.dots{position:absolute;bottom:16px;left:0;right:0;display:flex;justify-content:center;gap:8px}
+.dots button{width:8px;height:8px;border-radius:50%;border:0;background:rgba(253,249,238,.6);cursor:pointer;padding:0}
+.dots button.on{background:var(--gold);width:22px;border-radius:4px}
+@media (max-width:860px){.slider{aspect-ratio:3/4;max-height:none}.arr{display:none}}
+.sticky-cta{display:none}
+@media (max-width:860px){
+  .nav ul{display:none;position:absolute;top:72px;left:0;right:0;flex-direction:column;gap:0;background:var(--cream);border-bottom:1px solid var(--gold-soft)}
+  .nav ul.open{display:flex}
+  .nav ul a{display:block;padding:14px 20px;border-top:1px solid var(--gold-soft)}
+  .menu-btn{display:block}
+  .hero{grid-template-columns:1fr}
+  .hero-img{min-height:340px}
+  .grid,.three,.about{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr !important}
+  .signs{grid-template-columns:repeat(3,1fr)}
+  .result{grid-template-columns:1fr}
+  .sec{padding:64px 0}
+  .sticky-cta{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--paper);border-top:1px solid var(--gold-soft);box-shadow:0 -6px 20px -12px rgba(19,35,74,.35)}
+  .sticky-cta a{flex:1;text-align:center;padding:15px 8px;font-size:15px;letter-spacing:.1em;color:var(--navy)}
+  .sticky-cta a.primary{background:var(--navy);color:#F4EBD3}
+  body{padding-bottom:54px}
+}
+.faq{max-width:760px;margin:0 auto;border-top:1px solid var(--gold-soft)}
+.faq details{border-bottom:1px solid var(--gold-soft)}
+.faq summary{cursor:pointer;list-style:none;padding:18px 36px 18px 4px;position:relative;font-size:16px;color:var(--navy);letter-spacing:.06em}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:8px;top:50%;transform:translateY(-50%);color:var(--gold);font-size:22px;transition:transform .3s}
+.faq details[open] summary::after{transform:translateY(-50%) rotate(45deg)}
+.faq details p{padding:0 4px 20px;color:var(--muted);font-size:15px;line-height:1.9}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "織女星 VEGA 的手串是什麼材質？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "主要是人造貓眼石（玻璃材質，不是天然水晶），搭配 18K 鍍金黃銅鍊、不鏽鋼間隔珠與合金吊飾。每一款的詳細材質都寫在商品規格裡。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "什麼是半客製星座手串？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "款式由我們先設計好，你可以自己挑顏色；不知道怎麼選，可以參考我們幫 12 星座配的推薦顏色。想換珠子顏色或多加吊飾，IG 私訊我們討論。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "星座配色有開運效果嗎？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "沒有。星座配色只是幫你挑顏色的小靈感，不代表任何運勢或功效，最後還是選你自己喜歡的就好。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "手圍尺寸怎麼選？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "星環、夏夜是抽拉式可調鍊（約 14–21 cm），星海是龍蝦扣加延長鍊（約 17–22 cm），大部分手圍都能戴。手圍特別細或特別粗，可以私訊我們調整。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "可以客製顏色或加吊飾嗎？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "可以。IG 私訊 @vega.studio.tw，告訴我們想換的顏色或想加的吊飾，我們會回覆能不能做、價格多少。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "要怎麼購買？多久會收到？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "在 7-11 賣貨便下單，寄到你選的 7-11 門市取貨。手工製作後約 3–5 個工作天出貨。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "有實體店面或市集可以看實品嗎？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "目前沒有店面，但會在台中的市集與東海大學校內活動擺攤，時間地點會先公告在 IG。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "手串可以碰水嗎？怎麼保養？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "建議避免碰水、香水與保養品；運動、洗澡、睡覺時取下，不戴時收進夾鏈袋，可以讓金屬配件維持光澤更久。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "對金屬過敏可以戴嗎？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "手串含銅質與合金配件，對金屬敏感的人請斟酌配戴，有疑問可以先私訊我們確認材質。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "收到後不喜歡可以退換嗎？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "網路購物享有 7 天鑑賞期，商品保持完整未使用即可申請退貨。客製款因為是依你的需求製作，退換前請先私訊我們。"
+   }
+  }
+ ]
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://mrlongmo.github.io/vega-site/#brand",
+   "name": "織女星 VEGA",
+   "alternateName": [
+    "VEGA",
+    "織女星"
+   ],
+   "url": "https://mrlongmo.github.io/vega-site/",
+   "logo": "https://mrlongmo.github.io/vega-site/img/logo.png",
+   "description": "台中東海大學企業管理學系畢業專題團隊創立的半客製星座串珠手鍊品牌。",
+   "sameAs": [
+    "https://www.instagram.com/vega.studio.tw/"
+   ],
+   "areaServed": "TW",
+   "slogan": "挑你的色，織你的星"
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://mrlongmo.github.io/vega-site/#site",
+   "url": "https://mrlongmo.github.io/vega-site/",
+   "name": "織女星 VEGA",
+   "inLanguage": "zh-TW",
+   "publisher": {
+    "@id": "https://mrlongmo.github.io/vega-site/#brand"
+   }
+  },
+  {
+   "@type": "Product",
+   "@id": "https://mrlongmo.github.io/vega-site/#saturn",
+   "name": "星環 Saturn",
+   "description": "白色人造貓眼石 8mm 串珠手鍊，星球吊飾，抽拉式可調（約 14–20 cm）",
+   "image": "https://mrlongmo.github.io/vega-site/img/white.jpg",
+   "brand": {
+    "@id": "https://mrlongmo.github.io/vega-site/#brand"
+   },
+   "category": "手鍊",
+   "offers": {
+    "@type": "Offer",
+    "price": 490,
+    "priceCurrency": "TWD",
+    "url": "https://myship.7-11.com.tw/general/detail/GM2610147989967",
+    "seller": {
+     "@id": "https://mrlongmo.github.io/vega-site/#brand"
+    }
+   }
+  },
+  {
+   "@type": "Product",
+   "@id": "https://mrlongmo.github.io/vega-site/#summer",
+   "name": "夏夜 Summer Night",
+   "description": "綠色人造貓眼石 10mm 串珠手鍊，金色間隔珠，抽拉式可調（約 14–21 cm）",
+   "image": "https://mrlongmo.github.io/vega-site/img/green.jpg",
+   "brand": {
+    "@id": "https://mrlongmo.github.io/vega-site/#brand"
+   },
+   "category": "手鍊",
+   "offers": {
+    "@type": "Offer",
+    "price": 390,
+    "priceCurrency": "TWD",
+    "url": "https://myship.7-11.com.tw/general/detail/GM2610147989967",
+    "seller": {
+     "@id": "https://mrlongmo.github.io/vega-site/#brand"
+    }
+   }
+  },
+  {
+   "@type": "Product",
+   "@id": "https://mrlongmo.github.io/vega-site/#sea",
+   "name": "星海 Starry Sea",
+   "description": "粉色人造貓眼石 12mm 串珠手鍊，月亮、水母、蝴蝶多吊飾，龍蝦扣加延長鍊（約 17–22 cm）",
+   "image": "https://mrlongmo.github.io/vega-site/img/pink.jpg",
+   "brand": {
+    "@id": "https://mrlongmo.github.io/vega-site/#brand"
+   },
+   "category": "手鍊",
+   "offers": {
+    "@type": "Offer",
+    "price": 690,
+    "priceCurrency": "TWD",
+    "url": "https://myship.7-11.com.tw/general/detail/GM2610147989967",
+    "seller": {
+     "@id": "https://mrlongmo.github.io/vega-site/#brand"
+    }
+   }
+  }
+ ]
+}
+</script>
+</head>
+<body>
+
+<div class="bar" id="bar"></div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top"><img src="img/star.png" alt="織女星 VEGA logo"><div><span>VEGA</span><small>織女星</small></div></a>
+    <button class="menu-btn" aria-label="選單" onclick="document.querySelector('.nav ul').classList.toggle('open')">☰</button>
+    <ul>
+      <li><a href="#shop">商品</a></li>
+      <li><a href="#zodiac">星座配色</a></li>
+      <li><a href="#steps">三步選購</a></li>
+      <li><a href="#about">關於我們</a></li>
+      <li><a href="#how">如何購買</a></li>
+      <li><a href="#faq">常見問題</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="slider" id="slider">
+    <div class="slides">
+      <img src="img/pink.jpg" alt="星海手串">
+      <img src="img/white.jpg" alt="星環手串">
+      <img src="img/green.jpg" alt="夏夜手串">
+    </div>
+    <button class="arr prev" aria-label="上一張">‹</button>
+    <button class="arr next" aria-label="下一張">›</button>
+    <div class="dots"></div>
+  </div>
+  <div class="hero-txt">
+    <span class="note-hand">東海企管畢業專題・手工串珠手串</span>
+    <h1>挑你的色，<br>織你的星</h1>
+    <p>自己挑顏色，再配上你的星座推薦。<br>四個東海企管生，一顆一顆手工串。</p>
+    <div class="btns"><a class="btn" href="#shop">立即選購</a><a class="btn ghost" href="#zodiac">我的星座配色</a></div>
+  </div>
+</section>
+
+<section class="sec" id="shop">
+  <div class="wrap">
+    <div class="sec-head"><h2>第一批手串</h2><span class="note-hand">手工慢慢串，每一條都有一點點不一樣</span></div>
+    <div class="grid" id="products"></div>
+  </div>
+</section>
+
+
+<section class="sec" id="wear" style="background:var(--paper)">
+  <div class="wrap">
+    <div class="sec-head"><h2>日常搭配</h2><span class="note-hand">上課、約會、打工都戴得</span></div>
+    <div class="wear">
+      <div class="ph-slot wide" data-src="img/wear-1.jpg"><div><b>上手圖（橫向大圖）</b>待 Anson 實拍<br>窗邊・手腕特寫</div></div>
+      <div class="ph-slot" data-src="img/wear-2.jpg"><div><b>手部動作</b>待 Anson 實拍<br>拿咖啡／翻書</div></div>
+      <div class="ph-slot" data-src="img/wear-3.jpg"><div><b>平放情境</b>待 Anson 實拍<br>木桌・書本・乾燥花</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec quiz" id="zodiac">
+  <div class="stars"></div>
+  <div class="wrap" style="position:relative">
+    <div class="sec-head"><h2>你是什麼星座？</h2><span class="note-hand" style="color:var(--gold-soft)">點一下，看看我們幫你配的顏色</span></div>
+    <div class="signs" id="signs"></div>
+    <div class="result" id="result"></div>
+    <p class="hint">星座只是挑顏色的小靈感，最後還是選你自己喜歡的・<a href="zodiac-colors.html" style="text-decoration:underline">看 12 星座完整配色說明</a></p>
+  </div>
+</section>
+
+<section class=<section class="sec" id="steps">
+  <div class="wrap">
+    <div class="sec-head"><h2>三步，織出你的手串</h2><span class="note-hand">半客製：款式我們做好，顏色和細節你來挑</span></div>
+    <div class="steps" style="grid-template-columns:repeat(3,1fr)">
+      <div><h3>挑款式</h3><p>星環、夏夜、星海，先挑一條第一眼喜歡的。</p></div>
+      <div><h3>配星座</h3><p>選不下去？看看我們幫你的星座配的顏色。</p></div>
+      <div><h3>私訊客製</h3><p>想換珠子顏色、多加一顆吊飾，IG 私訊我們。手圍大多可調，不用擔心。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="about" style="background:var(--paper)">
+  <div class="wrap about">
+    <img src="img/white.jpg" alt="星環手串">
+    <div>
+      <h2>為什麼叫織女星？</h2>
+      <p>七夕故事裡，織女每天都在織布。我們覺得串手串也有點像這樣：一顆一顆，慢慢串成一條。</p>
+      <p>這是我們的畢業專題，也是我們第一次自己做品牌。從選珠子、拍照到第一次擺攤，過程都放在 IG 上，有興趣可以來看看我們怎麼手忙腳亂。</p>
+      <blockquote>挑你的色，織你的星。</blockquote>
+      <span class="note-hand">— 宏麗、Kezia、Anson、Mo</span>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="how">
+  <div class="wrap">
+    <div class="sec-head"><h2>怎麼買</h2><span class="note-hand">在 7-11 賣貨便下單，到超商取貨</span></div>
+    <div class="steps">
+      <div><h3>挑選款式</h3><p>選好喜歡的手串，或先玩星座配色找靈感。</p></div>
+      <div><h3>前往賣貨便</h3><p>點「立即購買」到 7-11 賣貨便下單（需登入 7-11 會員）。</p></div>
+      <div><h3>付款方式</h3><p>取貨付款、信用卡或 ATM 轉帳皆可。</p></div>
+      <div><h3>7-11 取貨</h3><p>手工製作後寄到你選的門市，約 3–5 個工作天。</p></div>
+    </div>
+    <p style="text-align:center;color:var(--muted);font-size:13px;margin-top:22px">⚠ 我們只在 7-11 賣貨便官方頁面收款，不會要求你加 LINE 或操作 ATM 認證。</p>
+  </div>
+</section>
+
+<section class="sec" id="faq">
+  <div class="wrap">
+    <div class="sec-head"><h2>常見問題</h2><span class="note-hand">還有問題？直接 IG 私訊我們</span></div>
+    <div class="faq">
+      <details><summary>織女星 VEGA 的手串是什麼材質？</summary><p>主要是人造貓眼石（玻璃材質，不是天然水晶），搭配 18K 鍍金黃銅鍊、不鏽鋼間隔珠與合金吊飾。每一款的詳細材質都寫在商品規格裡。</p></details>
+      <details><summary>什麼是半客製星座手串？</summary><p>款式由我們先設計好，你可以自己挑顏色；不知道怎麼選，可以參考我們幫 12 星座配的推薦顏色。想換珠子顏色或多加吊飾，IG 私訊我們討論。</p></details>
+      <details><summary>星座配色有開運效果嗎？</summary><p>沒有。星座配色只是幫你挑顏色的小靈感，不代表任何運勢或功效，最後還是選你自己喜歡的就好。</p></details>
+      <details><summary>手圍尺寸怎麼選？</summary><p>星環、夏夜是抽拉式可調鍊（約 14–21 cm），星海是龍蝦扣加延長鍊（約 17–22 cm），大部分手圍都能戴。手圍特別細或特別粗，可以私訊我們調整。</p></details>
+      <details><summary>可以客製顏色或加吊飾嗎？</summary><p>可以。IG 私訊 @vega.studio.tw，告訴我們想換的顏色或想加的吊飾，我們會回覆能不能做、價格多少。</p></details>
+      <details><summary>要怎麼購買？多久會收到？</summary><p>在 7-11 賣貨便下單，寄到你選的 7-11 門市取貨。手工製作後約 3–5 個工作天出貨。</p></details>
+      <details><summary>有實體店面或市集可以看實品嗎？</summary><p>目前沒有店面，但會在台中的市集與東海大學校內活動擺攤，時間地點會先公告在 IG。</p></details>
+      <details><summary>手串可以碰水嗎？怎麼保養？</summary><p>建議避免碰水、香水與保養品；運動、洗澡、睡覺時取下，不戴時收進夾鏈袋，可以讓金屬配件維持光澤更久。</p></details>
+      <details><summary>對金屬過敏可以戴嗎？</summary><p>手串含銅質與合金配件，對金屬敏感的人請斟酌配戴，有疑問可以先私訊我們確認材質。</p></details>
+      <details><summary>收到後不喜歡可以退換嗎？</summary><p>網路購物享有 7 天鑑賞期，商品保持完整未使用即可申請退貨。客製款因為是依你的需求製作，退換前請先私訊我們。</p></details>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <img src="img/logo-dark.png" alt="織女星 VEGA">
+      <ul>
+        <li><a href="https://www.instagram.com/vega.studio.tw/" target="_blank" rel="noopener">Instagram @vega.studio.tw</a></li>
+        <li><a href="https://myship.7-11.com.tw/general/detail/GM2610147989967" target="_blank" rel="noopener">7-11 賣貨便賣場</a></li>
+      </ul>
+      <ul>
+        <li>東海大學企業管理學系</li>
+        <li>畢業專題品牌</li>
+      </ul>
+    </div>
+    <div class="copy">© 2026 織女星 VEGA・挑你的色，織你的星・東海大學企管系畢業專題</div>
+  </div>
+</footer>
+
+<div class="sticky-cta">
+  <a href="https://www.instagram.com/vega.studio.tw/" target="_blank" rel="noopener">IG 私訊客製</a>
+  <a href="#shop" class="primary">看手串</a>
+</div>
+
+<script>
+const V=window.VEGA, P={};
+V.products.forEach(p=>P[p.id]=p);
+(function(){const bar=document.getElementById("bar");
+const msgs=V.announce.replace(/✦\s*/g,"").split("｜").map(s=>s.trim()).filter(Boolean);
+msgs.push("7-11 賣貨便下單・超商取貨");
+bar.innerHTML=msgs.map((m,i)=>`<span class="${i?"":"on"}">${m}</span>`).join("");
+const els=bar.children;let i=0;if(els.length<2)return;
+setInterval(()=>{const cur=els[i];cur.classList.remove("on");cur.classList.add("out");
+i=(i+1)%els.length;const nx=els[i];nx.classList.remove("out");void nx.offsetWidth;nx.classList.add("on");
+setTimeout(()=>cur.classList.remove("out"),650);},3500);})();
+const signsFor=id=>V.zodiac.filter(z=>z[2]===id).map(z=>z[0]+"座").join("、");
+const specLine=p=>p.specs.filter(s=>["珠子","扣頭","手圍"].includes(s[0])).map(s=>s[1].replace("（玻璃材質，非天然水晶）","")).join("・");
+const priceHtml=p=>p.price?`<span class="price"><small>NT$</small>${p.price}</span>`:`<span class="price" style="font-size:16px;color:var(--muted)">價格待定</span>`;
+document.getElementById("products").innerHTML=V.products.map(p=>`
+  <article class="card">
+    <div class="ph"><img src="${p.img}" alt="${p.name}手串" loading="lazy"><span class="tag">${p.tag}</span></div>
+    <div class="body">
+      <h3>${p.name}${p.draft?'<span class="draft">暫定名</span>':`<span class="en">${p.en}</span>`}</h3>
+      <p class="spec">${p.draft?p.short:specLine(p)}</p>
+      ${signsFor(p.id)?`<p class="sign">適合：${signsFor(p.id)}</p>`:'<p class="sign" style="color:var(--muted)">規格確認中</p>'}
+      <div class="row">${priceHtml(p)}${p.buy?`<a class="buy" href="${p.buy}" target="_blank" rel="noopener">立即購買 →</a>`:'<a class="buy" href="https://www.instagram.com/vega.studio.tw/" target="_blank" rel="noopener">私訊詢問 →</a>'}</div>
+    </div>
+  </article>`).join("");
+const sEl=document.getElementById("signs"),rEl=document.getElementById("result");
+sEl.innerHTML=V.zodiac.map((z,i)=>`<button data-i="${i}">${z[0]}座<small>${z[1]}</small></button>`).join("");
+sEl.addEventListener("click",e=>{
+  const b=e.target.closest("button"); if(!b) return;
+  sEl.querySelectorAll("button").forEach(x=>x.classList.toggle("on",x===b));
+  const [s,,id,t]=V.zodiac[b.dataset.i], p=P[id];
+  rEl.innerHTML=`<img src="${p.img}" alt="${p.name}手串"><div><span class="note-hand">${s}座的你，可以試試</span><h3>${p.name}</h3><p>${t}。<br>${p.story.split("。")[0]}。</p><div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap"><span class="price"><small>NT$</small>${p.price}</span><a class="btn" href="${p.buy}" target="_blank" rel="noopener">立即購買</a></div></div>`;
+  rEl.classList.remove("show"); void rEl.offsetWidth; rEl.classList.add("show");
+});
+
+
+// 首頁輪播
+(function(){
+  const box=document.querySelector("#slider .slides"), imgs=box.children, n=imgs.length, dots=document.querySelector("#slider .dots");
+  dots.innerHTML=[...imgs].map((_,i)=>`<button aria-label="第${i+1}張"></button>`).join("");
+  const cur=()=>Math.round(box.scrollLeft/box.clientWidth);
+  const go=i=>box.scrollTo({left:((i+n)%n)*box.clientWidth,behavior:"smooth"});
+  const mark=()=>[...dots.children].forEach((d,i)=>d.classList.toggle("on",i===cur()));
+  box.addEventListener("scroll",()=>requestAnimationFrame(mark)); mark();
+  dots.addEventListener("click",e=>{const b=e.target.closest("button"); if(b) go([...dots.children].indexOf(b));});
+  document.querySelector("#slider .prev").onclick=()=>go(cur()-1);
+  document.querySelector("#slider .next").onclick=()=>go(cur()+1);
+  let t=setInterval(()=>go(cur()+1),5000);
+  ["pointerdown","touchstart"].forEach(ev=>box.addEventListener(ev,()=>{clearInterval(t);t=setInterval(()=>go(cur()+1),7000)},{passive:true}));
+})();
+// 有實拍相就自動放入相框（將相片存做 img/wear-1.jpg 等）
+document.querySelectorAll(".ph-slot[data-src]").forEach(el=>{const i=new Image();i.onload=()=>{el.innerHTML="";el.appendChild(i);el.style.border="0"};i.alt="織女星手串配戴照";i.src=el.dataset.src;});
+document.querySelectorAll('.nav ul a').forEach(a=>a.addEventListener('click',()=>document.querySelector('.nav ul').classList.remove('open')));
+</script>
+</body>
+</html>

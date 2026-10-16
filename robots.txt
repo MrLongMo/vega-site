@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mrlongmo.github.io/vega-site/sitemap.xml
